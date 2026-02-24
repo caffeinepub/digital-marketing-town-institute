@@ -1,0 +1,41 @@
+{
+  "kind": "build_request",
+  "title": "Add contact number and address to landing page",
+  "projectName": "Digital Marketing Town Institute",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Display the institute's contact number (+91-9717044953) and address (Janakpuri, Delhi) prominently on the landing page — at minimum in the Footer's contact info column, and optionally in a dedicated contact section or the hero/CTA area.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "CONTACT NUMBER IS +91-9717044953  ADDRESS IS JANAKPURI , DELHI"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The phone number +91-9717044953 is visible and correctly formatted in the Footer contact section.",
+        "The address 'Janakpuri, Delhi' is visible in the Footer contact section.",
+        "Contact details are styled consistently with the existing dark navy/orange/yellow design theme.",
+        "Contact details are readable on both desktop and mobile viewports."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter the existing visual theme (dark navy/charcoal background, orange/yellow accents).",
+    "Do not modify files listed in frontend.immutablePaths.",
+    "Contact details must match exactly: phone +91-9717044953, address Janakpuri, Delhi."
+  ],
+  "nonGoals": [
+    "Adding a new contact form or lead capture form.",
+    "Integrating any external map or geolocation service.",
+    "Changing the overall page layout or section structure."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

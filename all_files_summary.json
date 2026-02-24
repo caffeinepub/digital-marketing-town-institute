@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report confirming that the institute's contact number and address are displayed in the Footer component, mapped to test requirement REQ-4.",
+  "frontend-file-summaries.txt": "JSON document containing one-sentence summaries of each frontend source file, describing their purpose and key implementation details.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH-based CSS custom properties for light and dark theme color tokens including background, foreground, brand, and sidebar variables.",
+  "frontend/index.html": "HTML entry point for the React app titled 'Digital Marketing Town Institute' that mounts the app into a root div and loads the main TSX module.",
+  "frontend/src/App.tsx": "Root React component that renders the LandingPage as the sole page of the single-page application.",
+  "frontend/src/components/CoursesOverview.tsx": "Displays a six-course grid (SEO, SMM, PPC, Content, Email, Analytics) with icons, descriptions, topics, duration, and level, plus an enroll CTA button.",
+  "frontend/src/components/CTABanner.tsx": "Full-width orange gradient CTA section with a 'Limited Seats Available' badge, enrollment headline, and two buttons that scroll to the contact and FAQ sections.",
+  "frontend/src/components/FAQ.tsx": "Accordion-style FAQ section with eight questions covering course eligibility, duration, certifications, placement, fees, and support.",
+  "frontend/src/components/Footer.tsx": "Four-column footer displaying the DMTI brand logo, social media links, quick navigation links, course list, and contact info including phone (+91-9717044953) and address (Janakpuri, Delhi).",
+  "frontend/src/components/Hero.tsx": "Hero section component for the DMTI landing page featuring a background image, headline, CTA buttons for enrollment, and stat counters (students, courses, placement rate).",
+  "frontend/src/components/Navbar.tsx": "Fixed top navigation bar with logo, smooth-scroll nav links, an 'Enroll Now' CTA button, and a collapsible mobile menu.",
+  "frontend/src/components/Testimonials.tsx": "Testimonials section displaying a 3-column grid of six student review cards with star ratings, quotes, and avatar initials.",
+  "frontend/src/components/WhyChooseUs.tsx": "Section highlighting six DMTI differentiators (expert instructors, flexible learning, certification, placement, mentorship, live projects) in a responsive card grid.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (anonymous or authenticated) using React Query, and invalidates dependent queries whenever the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing AuthClient creation, login/logout flow, identity persistence, and login status states.",
+  "frontend/src/index.css": "Global CSS file that imports Inter and Syne fonts, sets up Tailwind directives, defines dark navy/orange/yellow CSS custom properties for the design system, and adds utility classes for gradients, card hover effects, and glow styles.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider and InternetIdentityProvider, then mounts it to the DOM root.",
+  "frontend/src/pages/LandingPage.tsx": "Landing page component that composes all section components (Navbar, Hero, WhyChooseUs, CoursesOverview, Testimonials, CTABanner, FAQ, Footer) into a single full-page layout.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration that extends the theme with Inter/Syne fonts, oklch-based CSS variable color tokens, custom border radii, box shadows, and registers the typography, container-queries, and animate plugins.",
+  "project_state.json": "Project state metadata file tracking schema version, existing implemented features, and pending feature requests for the Digital Marketing Town Institute landing page build."
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add contact number and address to landing page",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Display institute contact number (+91-9717044953) and address (Janakpuri, Delhi) on the landing page Footer",
+      "acceptanceCriteria": [
+        "The phone number +91-9717044953 is visible and correctly formatted in the Footer contact section.",
+        "The address 'Janakpuri, Delhi' is visible in the Footer contact section.",
+        "Contact details are styled consistently with the existing dark navy/orange/yellow design theme.",
+        "Contact details are readable on both desktop and mobile viewports."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the Footer's contact info column to display the institute's phone number (+91-9717044953) and address (Janakpuri, Delhi). Ensure the phone number is formatted consistently (e.g., '+91-9717044953' or '+91 9717044953') and both details are styled with the existing dark navy/orange/yellow theme. Verify responsive readability on mobile and desktop viewports."
+        }
+      ]
+    }
+  ]
+}

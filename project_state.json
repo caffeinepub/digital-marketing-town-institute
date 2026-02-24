@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Landing page for Digital Marketing Town Institute, a digital marketing course provider. Contact: +91-9717044953, Address: Janakpuri, Delhi.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-compelling-landing-page-for-digital-marketing-town-institute-a-digital-marketing-course-provider-the-page-must-include-a-hero-section-with-the-institute-name-a-bold-tagline-and-a-primary-cta-button-enroll-now-a-why-choose-us-section-highlighting-key-benefits-e-g-expert-instructors-flexible-learning-industry-recognized-certification-a-courses-programs-overview-section-listing-digital-marketing-topics-seo-social-media-marketing-ppc-content-marketing-email-marketing-a-testimonials-section-with-student-quotes-a-faq-section-with-common-enrollment-questions-and-a-footer-with-contact-info-and-social-links",
+      "title": "Create a visually compelling landing page for 'Digital Marketing Town Institute' — a digital marketing course provider. The page must include: a hero section with the institute name, a bold tagline, and a primary CTA button ('Enroll Now'); a 'Why Choose Us' section highlighting key benefits (e.g., expert instructors, flexible learning, industry-recognized certification); a courses/programs overview section listing digital marketing topics (SEO, Social Media Marketing, PPC, Content Marketing, Email Marketing); a testimonials section with student quotes; a FAQ section with common enrollment questions; and a footer with contact info and social links.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-energetic-visual-theme-suited-to-a-modern-digital-marketing-institute-use-a-dark-navy-charcoal-background-with-vibrant-orange-and-yellow-accent-colors-clean-sans-serif-typography-and-high-contrast-section-dividers-use-gradient-backgrounds-for-the-hero-and-cta-sections-maintain-this-theme-consistently-across-all-sections",
+      "title": "Apply a bold, energetic visual theme suited to a modern digital marketing institute: use a dark navy/charcoal background with vibrant orange and yellow accent colors, clean sans-serif typography, and high-contrast section dividers. Use gradient backgrounds for the hero and CTA sections. Maintain this theme consistently across all sections.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-display-the-following-static-image-assets-on-the-landing-page-a-hero-banner-background-image-a-logo-brand-mark-for-the-institute-and-course-category-icon-illustrations-render-them-from-frontend-public-assets-generated",
+      "title": "Generate and display the following static image assets on the landing page: a hero banner background image, a logo/brand mark for the institute, and course category icon illustrations. Render them from frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-institute-s-contact-number-91-9717044953-and-address-janakpuri-delhi-prominently-on-the-landing-page-at-minimum-in-the-footer-s-contact-info-column-and-optionally-in-a-dedicated-contact-section-or-the-hero-cta-area",
+      "title": "Display the institute's contact number (+91-9717044953) and address (Janakpuri, Delhi) prominently on the landing page — at minimum in the Footer's contact info column, and optionally in a dedicated contact section or the hero/CTA area.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a landing page for Digital Marketing Town Institute (digital marketing course)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Include contact number +91-9717044953 and address Janakpuri, Delhi on the landing page",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Digital Marketing Town Institute",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Dark navy/charcoal base */
+    --background: 0.13 0.008 260;
+    --foreground: 0.96 0.005 90;
+
+    --card: 0.17 0.01 260;
+    --card-foreground: 0.96 0.005 90;
+
+    --popover: 0.17 0.01 260;
+    --popover-foreground: 0.96 0.005 90;
+
+    /* Orange primary */
+    --primary: 0.68 0.19 42;
+    --primary-foreground: 0.13 0.008 260;
+
+    /* Slightly lighter navy for secondary */
+    --secondary: 0.22 0.012 260;
+    --secondary-foreground: 0.96 0.005 90;
+
+    --muted: 0.22 0.012 260;
+    --muted-foreground: 0.62 0.01 260;
+
+    /* Yellow accent */
+    --accent: 0.82 0.18 85;
+    --accent-foreground: 0.13 0.008 260;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.28 0.015 260;
+    --input: 0.28 0.015 260;
+    --ring: 0.68 0.19 42;
+
+    --chart-1: 0.68 0.19 42;
+    --chart-2: 0.82 0.18 85;
+    --chart-3: 0.55 0.15 200;
+    --chart-4: 0.72 0.16 160;
+    --chart-5: 0.65 0.2 30;
+
+    --sidebar: 0.17 0.01 260;
+    --sidebar-foreground: 0.96 0.005 90;
+    --sidebar-primary: 0.68 0.19 42;
+    --sidebar-primary-foreground: 0.13 0.008 260;
+    --sidebar-accent: 0.22 0.012 260;
+    --sidebar-accent-foreground: 0.96 0.005 90;
+    --sidebar-border: 0.28 0.015 260;
+    --sidebar-ring: 0.68 0.19 42;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Syne', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.10 0.015 260) 0%,
+      oklch(0.14 0.02 255) 40%,
+      oklch(0.16 0.025 240) 70%,
+      oklch(0.12 0.01 260) 100%
+    );
+  }
+
+  .orange-gradient {
+    background: linear-gradient(135deg, oklch(0.68 0.19 42) 0%, oklch(0.72 0.2 55) 100%);
+  }
+
+  .section-alt {
+    background-color: oklch(0.17 0.01 260);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, oklch(0.68 0.19 42), oklch(0.82 0.18 85));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px oklch(0 0 0 / 40%);
+  }
+
+  .glow-orange {
+    box-shadow: 0 0 30px oklch(0.68 0.19 42 / 30%);
+  }
+}
