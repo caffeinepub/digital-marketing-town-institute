@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Landing page for Digital Marketing Town Institute, a digital marketing course provider. Contact: +91-9717044953, Address: Janakpuri, Delhi.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Reproduce the uploaded official Digital Marketing Town Institute logo with transparent background, blue globe swirl icon and dark navy/blue text on white canvas (634148647_122179060742832877_9161951422936210272_n.jpg > dmti-logo.dim_400x160.png)",
   "existing_features": [
     {
       "id": "feature-create-a-visually-compelling-landing-page-for-digital-marketing-town-institute-a-digital-marketing-course-provider-the-page-must-include-a-hero-section-with-the-institute-name-a-bold-tagline-and-a-primary-cta-button-enroll-now-a-why-choose-us-section-highlighting-key-benefits-e-g-expert-instructors-flexible-learning-industry-recognized-certification-a-courses-programs-overview-section-listing-digital-marketing-topics-seo-social-media-marketing-ppc-content-marketing-email-marketing-a-testimonials-section-with-student-quotes-a-faq-section-with-common-enrollment-questions-and-a-footer-with-contact-info-and-social-links",
@@ -37,6 +38,14 @@
         "REQ-4"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-generated-placeholder-logo-image-in-the-navbar-and-footer-components-with-the-uploaded-official-digital-marketing-town-institute-logo-dmti-logo-png-the-logo-shows-a-blue-globe-like-swirl-icon-alongside-the-text-digital-marketing-town-institute-display-it-at-an-appropriate-size-in-both-components-preserving-its-aspect-ratio-the-image-must-be-served-from-frontend-public-assets-generated-dmti-logo-png",
+      "title": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -49,6 +58,12 @@
     {
       "id": "AR-2",
       "summary": "Include contact number +91-9717044953 and address Janakpuri, Delhi on the landing page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Use the provided/uploaded logo image for the institute on the landing page",
       "reqIds": [],
       "status": "pending"
     }

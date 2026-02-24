@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T12:31:09.562Z",
+  "generatedAt": "2026-02-24T12:43:52.769Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,13 +11,15 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-4",
-        "summary": "Display the institute's contact number (+91-9717044953) and address (Janakpuri, Delhi) prominently on the landing page — at minimum in the Footer's contact info column, and optionally in a dedicated contact section or the hero/CTA area.",
+        "id": "REQ-5",
+        "summary": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
         "status": "implemented",
         "plannedFiles": [
+          "frontend/src/components/Navbar.tsx",
           "frontend/src/components/Footer.tsx"
         ],
         "matchedFiles": [
+          "frontend/src/components/Navbar.tsx",
           "frontend/src/components/Footer.tsx"
         ]
       }
@@ -25,11 +27,12 @@
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/dmti-logo.dim_400x160.png",
     "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

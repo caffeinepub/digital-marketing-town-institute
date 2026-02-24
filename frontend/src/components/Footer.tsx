@@ -41,16 +41,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="mb-5">
               <img
-                src="/assets/generated/dmti-logo.dim_256x256.png"
-                alt="DMTI Logo"
-                className="h-12 w-12 rounded-full object-cover"
+                src="/assets/generated/dmti-logo.dim_400x160.png"
+                alt="Digital Marketing Town Institute"
+                className="h-14 w-auto object-contain"
               />
-              <div>
-                <div className="font-display font-bold text-foreground text-sm leading-tight">Digital Marketing</div>
-                <div className="font-display font-bold text-brand-orange text-sm leading-tight">Town Institute</div>
-              </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Empowering the next generation of digital marketing professionals with world-class education and industry-recognized certifications.

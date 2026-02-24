@@ -2,10 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-display-the-institute-s-contact-number-91-9717044953-and-address-janakpuri-delhi-prominently-on-the-landing-page-at-minimum-in-the-footer-s-contact-info-column-and-optionally-in-a-dedicated-contact-section-or-the-hero-cta-area",
-      "featureTitle": "Display the institute's contact number (+91-9717044953) and address (Janakpuri, Delhi) prominently on the landing page — at minimum in the Footer's contact info column, and optionally in a dedicated contact section or the hero/CTA area.",
+      "featureId": "feature-replace-the-current-generated-placeholder-logo-image-in-the-navbar-and-footer-components-with-the-uploaded-official-digital-marketing-town-institute-logo-dmti-logo-png-the-logo-shows-a-blue-globe-like-swirl-icon-alongside-the-text-digital-marketing-town-institute-display-it-at-an-appropriate-size-in-both-components-preserving-its-aspect-ratio-the-image-must-be-served-from-frontend-public-assets-generated-dmti-logo-png",
+      "featureTitle": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
       "files": [
-        "frontend/src/components/Footer.tsx"
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Navbar.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +16,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-4"
+        "REQ-5"
       ],
       "confidence": "high"
     }

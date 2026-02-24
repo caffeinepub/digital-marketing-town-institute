@@ -1,41 +1,43 @@
 {
   "kind": "build_request",
-  "title": "Add contact number and address to landing page",
+  "title": "Replace generated logo with uploaded official DMTI logo",
   "projectName": "Digital Marketing Town Institute",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-4",
-      "text": "Display the institute's contact number (+91-9717044953) and address (Janakpuri, Delhi) prominently on the landing page — at minimum in the Footer's contact info column, and optionally in a dedicated contact section or the hero/CTA area.",
+      "id": "REQ-5",
+      "text": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-latest"
         ],
         "quotes": [
-          "CONTACT NUMBER IS +91-9717044953  ADDRESS IS JANAKPURI , DELHI"
+          "USE THIS LOGO"
         ]
       },
       "acceptanceCriteria": [
-        "The phone number +91-9717044953 is visible and correctly formatted in the Footer contact section.",
-        "The address 'Janakpuri, Delhi' is visible in the Footer contact section.",
-        "Contact details are styled consistently with the existing dark navy/orange/yellow design theme.",
-        "Contact details are readable on both desktop and mobile viewports."
+        "The uploaded logo image (dmti-logo.png) is present in frontend/public/assets/generated/",
+        "The Navbar component displays the uploaded logo in place of any previous logo or text-only brand mark",
+        "The Footer component displays the uploaded logo in its brand column in place of any previous logo",
+        "The logo renders at an appropriate size (e.g., height ~40–48px in Navbar, ~56–64px in Footer) with preserved aspect ratio",
+        "No broken image links or placeholder logos remain on the page"
       ]
     }
   ],
   "constraints": [
-    "Do not alter the existing visual theme (dark navy/charcoal background, orange/yellow accents).",
-    "Do not modify files listed in frontend.immutablePaths.",
-    "Contact details must match exactly: phone +91-9717044953, address Janakpuri, Delhi."
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Serve the logo exclusively as a static asset from frontend/public/assets/generated/dmti-logo.png — do not route it through the backend"
   ],
   "nonGoals": [
-    "Adding a new contact form or lead capture form.",
-    "Integrating any external map or geolocation service.",
-    "Changing the overall page layout or section structure."
+    "Redesigning or altering the logo image itself",
+    "Changing any other section's images or assets",
+    "Modifying the backend"
   ],
   "imageRequirements": {
     "required": [],
-    "edits": []
+    "edits": [
+      "Reproduce the uploaded official Digital Marketing Town Institute logo with transparent background, blue globe swirl icon and dark navy/blue text on white canvas (634148647_122179060742832877_9161951422936210272_n.jpg > dmti-logo.dim_400x160.png)"
+    ]
   }
 }

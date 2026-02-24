@@ -1,22 +1,28 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add contact number and address to landing page",
+  "title": "Replace generated logo with uploaded official DMTI logo",
   "requirements": [
     {
-      "id": "REQ-4",
-      "summary": "Display institute contact number (+91-9717044953) and address (Janakpuri, Delhi) on the landing page Footer",
+      "id": "REQ-5",
+      "summary": "Replace current placeholder logo in Navbar and Footer with the official DMTI logo served from frontend/public/assets/generated/dmti-logo.dim_400x160.png",
       "acceptanceCriteria": [
-        "The phone number +91-9717044953 is visible and correctly formatted in the Footer contact section.",
-        "The address 'Janakpuri, Delhi' is visible in the Footer contact section.",
-        "Contact details are styled consistently with the existing dark navy/orange/yellow design theme.",
-        "Contact details are readable on both desktop and mobile viewports."
+        "The uploaded logo image (dmti-logo.png) is present in frontend/public/assets/generated/",
+        "The Navbar component displays the uploaded logo in place of any previous logo or text-only brand mark",
+        "The Footer component displays the uploaded logo in its brand column in place of any previous logo",
+        "The logo renders at an appropriate size (e.g., height ~40–48px in Navbar, ~56–64px in Footer) with preserved aspect ratio",
+        "No broken image links or placeholder logos remain on the page"
       ],
       "file_operations": [
         {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Replace the current logo implementation with an <img> element that references the uploaded official DMTI logo at frontend/public/assets/generated/dmti-logo.dim_400x160.png. Set an appropriate height (e.g., h-10 or h-12 for ~40-48px) and preserve aspect ratio using w-auto. Ensure the logo remains visible and properly aligned within the navbar layout."
+        },
+        {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update the Footer's contact info column to display the institute's phone number (+91-9717044953) and address (Janakpuri, Delhi). Ensure the phone number is formatted consistently (e.g., '+91-9717044953' or '+91 9717044953') and both details are styled with the existing dark navy/orange/yellow theme. Verify responsive readability on mobile and desktop viewports."
+          "description": "Replace the current logo in the brand column with an <img> element that references the uploaded official DMTI logo at frontend/public/assets/generated/dmti-logo.dim_400x160.png. Set an appropriate height (e.g., h-14 or h-16 for ~56-64px) and preserve aspect ratio using w-auto. Ensure the logo is properly positioned at the top of the brand column."
         }
       ]
     }
