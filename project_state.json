@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "Landing page for Digital Marketing Town Institute, a digital marketing course provider. Contact: +91-9717044953, Address: Janakpuri, Delhi.",
+  "projectStateVersion": 13,
+  "summary": "E-commerce website for Digital Marketing Town, a digital marketing agency located in Janakpuri, Delhi. Contact: +91-9717044953. Should use the existing logo and images.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Reproduce the uploaded official Digital Marketing Town Institute logo with transparent background, blue globe swirl icon and dark navy/blue text on white canvas (634148647_122179060742832877_9161951422936210272_n.jpg > dmti-logo.dim_400x160.png)",
+  "imageRequirements": "## Edit Images\n- Replace logo with the newly uploaded official Digital Marketing Town logo (dmti-logo.png > dmti-logo.png)",
   "existing_features": [
     {
       "id": "feature-create-a-visually-compelling-landing-page-for-digital-marketing-town-institute-a-digital-marketing-course-provider-the-page-must-include-a-hero-section-with-the-institute-name-a-bold-tagline-and-a-primary-cta-button-enroll-now-a-why-choose-us-section-highlighting-key-benefits-e-g-expert-instructors-flexible-learning-industry-recognized-certification-a-courses-programs-overview-section-listing-digital-marketing-topics-seo-social-media-marketing-ppc-content-marketing-email-marketing-a-testimonials-section-with-student-quotes-a-faq-section-with-common-enrollment-questions-and-a-footer-with-contact-info-and-social-links",
@@ -46,6 +46,70 @@
         "REQ-5"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-a-new-gallery-promotions-section-to-the-landing-page-that-displays-the-three-uploaded-promotional-images-dmti-promo-1-jpg-dmti-promo-2-jpg-dmti-promo-3-jpg-as-a-responsive-grid-or-carousel-place-this-section-between-the-coursesoverview-and-testimonials-sections-images-must-be-served-from-frontend-public-assets-generated-and-styled-consistently-with-the-existing-dark-navy-orange-theme",
+      "title": "Add a new 'Gallery / Promotions' section to the landing page that displays the three uploaded promotional images (dmti-promo-1.jpg, dmti-promo-2.jpg, dmti-promo-3.jpg) as a responsive grid or carousel. Place this section between the CoursesOverview and Testimonials sections. Images must be served from frontend/public/assets/generated/ and styled consistently with the existing dark navy/orange theme.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-video-highlights-section-to-the-landing-page-featuring-embedded-youtube-video-placeholders-using-3-representative-iframe-embeds-for-digital-marketing-topics-since-no-specific-video-urls-were-provided-use-clearly-labelled-placeholder-iframes-with-a-note-that-urls-can-be-swapped-place-this-section-after-the-gallery-promotions-section-style-it-consistently-with-the-dark-navy-orange-theme-with-a-section-heading-like-watch-learn",
+      "title": "Add a 'Video Highlights' section to the landing page featuring embedded YouTube video placeholders (using 3 representative iframe embeds for digital marketing topics). Since no specific video URLs were provided, use clearly labelled placeholder iframes with a note that URLs can be swapped. Place this section after the Gallery/Promotions section. Style it consistently with the dark navy/orange theme with a section heading like 'Watch & Learn'.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-existing-landing-page-into-a-full-agency-website-for-digital-marketing-town-a-digital-marketing-agency-located-at-janakpuri-c1-delhi-110058-contact-91-9717044953-email-digitalmarketingtown14-gmail-com-the-site-must-clearly-position-the-business-as-an-agency-not-just-an-institute-with-a-hero-section-proclaiming-the-agency-s-value-proposition-e-g-get-more-leads-grow-your-business-and-navigation-linking-to-all-sections-retain-the-existing-dark-navy-orange-yellow-brand-theme",
+      "title": "Rebuild the existing landing page into a full agency website for 'Digital Marketing Town' — a digital marketing agency located at Janakpuri C1, Delhi-110058, contact +91-9717044953, email digitalmarketingtown14@gmail.com. The site must clearly position the business as an agency (not just an institute), with a hero section proclaiming the agency's value proposition (e.g., 'Get More Leads & Grow Your Business'), and navigation linking to all sections. Retain the existing dark navy/orange/yellow brand theme.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-services-section-listing-the-agency-s-digital-marketing-service-packages-as-purchasable-inquiry-cards-each-service-card-must-include-a-service-name-a-short-description-a-price-or-get-quote-cta-button-and-a-brief-list-of-deliverables-services-to-include-social-media-marketing-seo-services-google-ads-ppc-meta-ads-campaigns-responsive-web-design-web-development-domain-hosting-the-cta-button-on-each-card-should-scroll-to-or-open-the-contact-inquiry-form",
+      "title": "Add a 'Services' section listing the agency's digital marketing service packages as purchasable/inquiry cards. Each service card must include: a service name, a short description, a price or 'Get Quote' CTA button, and a brief list of deliverables. Services to include: Social Media Marketing, SEO Services, Google Ads / PPC, Meta Ads Campaigns, Responsive Web Design, Web Development, Domain & Hosting. The CTA button on each card should scroll to or open the contact/inquiry form.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-get-a-free-consultation-inquiry-form-section-to-the-website-the-form-must-include-fields-for-name-phone-number-email-service-interested-in-dropdown-and-message-on-submission-the-form-data-should-be-stored-in-the-backend-canister-and-the-user-should-see-a-success-confirmation-message-display-the-agency-s-contact-details-91-9717044953-janakpuri-c1-delhi-110058-digitalmarketingtown14-gmail-com-alongside-the-form",
+      "title": "Add a 'Contact / Get a Free Consultation' inquiry form section to the website. The form must include fields for: Name, Phone Number, Email, Service Interested In (dropdown), and Message. On submission, the form data should be stored in the backend canister and the user should see a success confirmation message. Display the agency's contact details (+91-9717044953, Janakpuri C1 Delhi-110058, digitalmarketingtown14@gmail.com) alongside the form.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-course-focused-gallery-promotions-section-content-with-the-16-uploaded-agency-promotional-images-save-and-serve-the-following-uploaded-images-from-frontend-public-assets-generated-with-these-filenames-dmt-promo-social-media-jpg-515406865-dmt-promo-ingredients-jpg-515431247-dmt-promo-attract-customers-jpg-515024738-dmt-promo-balance-business-jpg-515570670-dmt-promo-increase-sales-jpg-515770463-dmt-promo-get-leads-jpg-636801301-dmt-promo-cheap-price-jpg-515100076-dmt-promo-grow-business-jpg-514790683-dmt-promo-car-petrol-jpg-515670932-dmt-promo-moments-minister-jpg-526302368-dmt-promo-ashish-sood-jpg-525365707-dmt-promo-event-1-jpg-488206362-dmt-promo-event-2-jpg-496084659-dmt-promo-event-3-jpg-495279509-dmt-promo-event-4-jpg-532301845-display-the-marketing-promotional-creatives-dmt-promo-social-media-dmt-promo-ingredients-dmt-promo-attract-customers-dmt-promo-balance-business-dmt-promo-increase-sales-dmt-promo-get-leads-dmt-promo-cheap-price-dmt-promo-grow-business-dmt-promo-car-petrol-in-the-gallery-section-as-a-responsive-masonry-or-grid-layout-display-the-event-moments-photos-in-a-separate-our-moments-section-with-a-caption-area",
+      "title": "Replace the existing course-focused gallery/promotions section content with the 16 uploaded agency promotional images. Save and serve the following uploaded images from frontend/public/assets/generated/ with these filenames: dmt-promo-social-media.jpg (515406865), dmt-promo-ingredients.jpg (515431247), dmt-promo-attract-customers.jpg (515024738), dmt-promo-balance-business.jpg (515570670), dmt-promo-increase-sales.jpg (515770463), dmt-promo-get-leads.jpg (636801301), dmt-promo-cheap-price.jpg (515100076), dmt-promo-grow-business.jpg (514790683), dmt-promo-car-petrol.jpg (515670932), dmt-promo-moments-minister.jpg (526302368), dmt-promo-ashish-sood.jpg (525365707), dmt-promo-event-1.jpg (488206362), dmt-promo-event-2.jpg (496084659), dmt-promo-event-3.jpg (495279509), dmt-promo-event-4.jpg (532301845). Display the marketing/promotional creatives (dmt-promo-social-media, dmt-promo-ingredients, dmt-promo-attract-customers, dmt-promo-balance-business, dmt-promo-increase-sales, dmt-promo-get-leads, dmt-promo-cheap-price, dmt-promo-grow-business, dmt-promo-car-petrol) in the gallery section as a responsive masonry or grid layout. Display the event/moments photos in a separate 'Our Moments' section with a caption area.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-navbar-and-footer-to-reflect-the-agency-identity-the-navbar-should-show-the-digital-marketing-town-logo-dmti-logo-png-already-at-frontend-public-assets-generated-dmti-logo-png-and-navigation-links-home-services-about-gallery-testimonials-contact-the-footer-should-display-agency-contact-info-91-9717044953-janakpuri-c1-delhi-110058-digitalmarketingtown14-gmail-com-digitalmarketingtown-com-social-media-links-facebook-instagram-youtube-linkedin-twitter-x-pinterest-a-quick-links-column-and-a-services-column-remove-any-institute-course-specific-copy-and-replace-with-agency-focused-copy",
+      "title": "Update the Navbar and Footer to reflect the agency identity. The Navbar should show the Digital Marketing Town logo (dmti-logo.png already at frontend/public/assets/generated/dmti-logo.png) and navigation links: Home, Services, About, Gallery, Testimonials, Contact. The Footer should display agency contact info (+91-9717044953, Janakpuri C1, Delhi-110058, digitalmarketingtown14@gmail.com, digitalmarketingtown.com), social media links (Facebook, Instagram, YouTube, LinkedIn, Twitter/X, Pinterest), a quick links column, and a services column. Remove any institute/course-specific copy and replace with agency-focused copy.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-logo-image-currently-displayed-in-the-navbar-and-footer-components-with-the-newly-uploaded-logo-served-from-frontend-public-assets-generated-dmti-logo-png-display-it-at-an-appropriate-size-in-both-components-preserving-its-aspect-ratio",
+      "title": "Replace the logo image currently displayed in the Navbar and Footer components with the newly uploaded logo served from frontend/public/assets/generated/dmti-logo.png. Display it at an appropriate size in both components, preserving its aspect ratio.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -65,6 +129,38 @@
       "id": "AR-3",
       "summary": "Use the provided/uploaded logo image for the institute on the landing page",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add a photo (uploaded by user) to the landing page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add videos to the landing page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Build an e-commerce website (not just a landing page) for Digital Marketing Town agency",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Include product/service listings with purchase or inquiry functionality (e-commerce features)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add a backend Motoko actor function to store and retrieve client inquiry submissions. The actor must expose: (1) a `submitInquiry` update function accepting name, phone, email, service, and message fields, returning a success confirmation; (2) a `getInquiries` query function returning all stored inquiries. Use a stable array or stable HashMap for persistence across upgrades.",
+      "reqIds": [
+        "REQ-13"
+      ],
       "status": "pending"
     }
   ],

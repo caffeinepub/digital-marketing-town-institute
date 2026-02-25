@@ -1,43 +1,43 @@
 {
   "kind": "build_request",
-  "title": "Replace generated logo with uploaded official DMTI logo",
-  "projectName": "Digital Marketing Town Institute",
+  "title": "Replace Navbar and Footer logo with newly uploaded logo",
+  "projectName": "Digital Marketing Town",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-5",
-      "text": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
+      "id": "REQ-14",
+      "text": "Replace the logo image currently displayed in the Navbar and Footer components with the newly uploaded logo served from frontend/public/assets/generated/dmti-logo.png. Display it at an appropriate size in both components, preserving its aspect ratio.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "USE THIS LOGO"
+          "use this logo"
         ]
       },
       "acceptanceCriteria": [
-        "The uploaded logo image (dmti-logo.png) is present in frontend/public/assets/generated/",
-        "The Navbar component displays the uploaded logo in place of any previous logo or text-only brand mark",
-        "The Footer component displays the uploaded logo in its brand column in place of any previous logo",
-        "The logo renders at an appropriate size (e.g., height ~40–48px in Navbar, ~56–64px in Footer) with preserved aspect ratio",
-        "No broken image links or placeholder logos remain on the page"
+        "The Navbar displays the new logo image from frontend/public/assets/generated/dmti-logo.png",
+        "The Footer displays the new logo image from frontend/public/assets/generated/dmti-logo.png",
+        "The logo aspect ratio is preserved in both Navbar and Footer",
+        "No broken image links or placeholder images remain in Navbar or Footer"
       ]
     }
   ],
   "constraints": [
-    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/",
-    "Serve the logo exclusively as a static asset from frontend/public/assets/generated/dmti-logo.png — do not route it through the backend"
+    "Logo must be served from frontend/public/assets/generated/dmti-logo.png",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/main.tsx",
+    "Do not alter any other sections or components beyond Navbar and Footer"
   ],
   "nonGoals": [
-    "Redesigning or altering the logo image itself",
-    "Changing any other section's images or assets",
-    "Modifying the backend"
+    "Changing any other branding or copy on the page",
+    "Modifying backend logic",
+    "Updating any sections other than Navbar and Footer"
   ],
   "imageRequirements": {
     "required": [],
     "edits": [
-      "Reproduce the uploaded official Digital Marketing Town Institute logo with transparent background, blue globe swirl icon and dark navy/blue text on white canvas (634148647_122179060742832877_9161951422936210272_n.jpg > dmti-logo.dim_400x160.png)"
+      "Replace logo with the newly uploaded official Digital Marketing Town logo (dmti-logo.png > dmti-logo.png)"
     ]
   }
 }

@@ -1,28 +1,27 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace generated logo with uploaded official DMTI logo",
+  "title": "Replace Navbar and Footer logo with newly uploaded logo",
   "requirements": [
     {
-      "id": "REQ-5",
-      "summary": "Replace current placeholder logo in Navbar and Footer with the official DMTI logo served from frontend/public/assets/generated/dmti-logo.dim_400x160.png",
+      "id": "REQ-14",
+      "summary": "Replace the logo image in Navbar and Footer with the newly uploaded logo from frontend/public/assets/generated/dmti-logo.png, displaying it at appropriate sizes while preserving aspect ratio",
       "acceptanceCriteria": [
-        "The uploaded logo image (dmti-logo.png) is present in frontend/public/assets/generated/",
-        "The Navbar component displays the uploaded logo in place of any previous logo or text-only brand mark",
-        "The Footer component displays the uploaded logo in its brand column in place of any previous logo",
-        "The logo renders at an appropriate size (e.g., height ~40–48px in Navbar, ~56–64px in Footer) with preserved aspect ratio",
-        "No broken image links or placeholder logos remain on the page"
+        "The Navbar displays the new logo image from frontend/public/assets/generated/dmti-logo.png",
+        "The Footer displays the new logo image from frontend/public/assets/generated/dmti-logo.png",
+        "The logo aspect ratio is preserved in both Navbar and Footer",
+        "No broken image links or placeholder images remain in Navbar or Footer"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Navbar.tsx",
           "operation": "modify",
-          "description": "Replace the current logo implementation with an <img> element that references the uploaded official DMTI logo at frontend/public/assets/generated/dmti-logo.dim_400x160.png. Set an appropriate height (e.g., h-10 or h-12 for ~40-48px) and preserve aspect ratio using w-auto. Ensure the logo remains visible and properly aligned within the navbar layout."
+          "description": "Replace the existing logo image source with frontend/public/assets/generated/dmti-logo.dim_400x160.png (or dmti-logo.dim_256x256.png for smaller displays). Update the img element to use the new asset path, ensure the aspect ratio is preserved using appropriate width/height attributes or CSS, and verify the alt text describes the Digital Marketing Town logo appropriately."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Replace the current logo in the brand column with an <img> element that references the uploaded official DMTI logo at frontend/public/assets/generated/dmti-logo.dim_400x160.png. Set an appropriate height (e.g., h-14 or h-16 for ~56-64px) and preserve aspect ratio using w-auto. Ensure the logo is properly positioned at the top of the brand column."
+          "description": "Replace the existing logo image source with frontend/public/assets/generated/dmti-logo.dim_256x256.png. Update the img element to use the new asset path, ensure the aspect ratio is preserved using appropriate width/height attributes or CSS, and verify the alt text describes the Digital Marketing Town logo appropriately."
         }
       ]
     }

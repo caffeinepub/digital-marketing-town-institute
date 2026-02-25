@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T12:43:52.769Z",
+  "generatedAt": "2026-02-25T11:39:41.692Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,8 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-5",
-        "summary": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
+        "id": "REQ-14",
+        "summary": "Replace the logo image currently displayed in the Navbar and Footer components with the newly uploaded logo served from frontend/public/assets/generated/dmti-logo.png. Display it at an appropriate size in both components, preserving its aspect ratio.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/Navbar.tsx",
@@ -30,7 +30,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/dmti-logo.dim_400x160.png",
+    "frontend/public/assets/generated/dmti-logo.png",
     "frontend/src/components/Footer.tsx",
     "frontend/src/components/Navbar.tsx",
     "project_state.json",

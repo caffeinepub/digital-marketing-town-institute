@@ -1,29 +1,32 @@
-import { Mail, Phone, MapPin, Heart } from 'lucide-react';
-import { SiFacebook, SiX, SiInstagram, SiLinkedin, SiYoutube } from 'react-icons/si';
+import { Mail, Phone, MapPin, Globe, Heart } from 'lucide-react';
+import { SiFacebook, SiX, SiInstagram, SiLinkedin, SiYoutube, SiPinterest } from 'react-icons/si';
 
 const quickLinks = [
-  { label: 'Why Choose Us', href: '#why-us' },
-  { label: 'Our Courses', href: '#courses' },
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services-section' },
+  { label: 'About Us', href: '#why-us' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact Us', href: '#contact' },
+  { label: 'Contact', href: '#contact-section' },
 ];
 
-const courses = [
-  'Search Engine Optimization',
+const services = [
   'Social Media Marketing',
-  'Pay-Per-Click Advertising',
-  'Content Marketing',
-  'Email Marketing',
-  'Analytics & Data',
+  'SEO Services',
+  'Google Ads / PPC',
+  'Meta Ads Campaigns',
+  'Web Design',
+  'Web Development',
+  'Domain & Hosting',
 ];
 
 const socialLinks = [
-  { icon: SiFacebook, href: '#', label: 'Facebook' },
-  { icon: SiInstagram, href: '#', label: 'Instagram' },
-  { icon: SiLinkedin, href: '#', label: 'LinkedIn' },
-  { icon: SiX, href: '#', label: 'X (Twitter)' },
-  { icon: SiYoutube, href: '#', label: 'YouTube' },
+  { icon: SiFacebook, href: 'https://facebook.com/digitalmarketingtown', label: 'Facebook' },
+  { icon: SiInstagram, href: 'https://instagram.com/digitalmarketingtown', label: 'Instagram' },
+  { icon: SiYoutube, href: 'https://youtube.com/@digitalmarketingtown', label: 'YouTube' },
+  { icon: SiLinkedin, href: 'https://linkedin.com/company/digitalmarketingtown', label: 'LinkedIn' },
+  { icon: SiX, href: 'https://x.com/dmtowndelhi', label: 'X (Twitter)' },
+  { icon: SiPinterest, href: 'https://pinterest.com/digitalmarketingtown', label: 'Pinterest' },
 ];
 
 export default function Footer() {
@@ -35,28 +38,34 @@ export default function Footer() {
   const appId = typeof window !== 'undefined' ? encodeURIComponent(window.location.hostname) : 'unknown-app';
 
   return (
-    <footer id="contact" className="bg-brand-navy border-t border-border">
+    <footer className="bg-brand-navy border-t border-border">
       {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <div className="mb-5">
+            <div className="mb-4">
               <img
-                src="/assets/generated/dmti-logo.dim_400x160.png"
-                alt="Digital Marketing Town Institute"
+                src="/assets/generated/dmti-logo.png"
+                alt="Digital Marketing Town"
                 className="h-14 w-auto object-contain"
               />
             </div>
+            <p className="text-brand-yellow text-sm leading-relaxed mb-2 font-semibold">
+              Your Partner in Digital Growth
+            </p>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Empowering the next generation of digital marketing professionals with world-class education and industry-recognized certifications.
+              Full-service digital marketing agency in Janakpuri, Delhi. We help businesses grow online through
+              SEO, social media, paid ads, and web development.
             </p>
             {/* Social links */}
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-2">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-full bg-brand-navy-mid border border-border flex items-center justify-center text-muted-foreground hover:text-brand-orange hover:border-brand-orange/40 transition-colors"
                 >
@@ -85,19 +94,19 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Courses */}
+          {/* Services */}
           <div>
             <h4 className="font-display font-bold text-foreground text-sm uppercase tracking-wider mb-4">
-              Our Courses
+              Our Services
             </h4>
             <ul className="space-y-2.5">
-              {courses.map((course) => (
-                <li key={course}>
+              {services.map((service) => (
+                <li key={service}>
                   <button
-                    onClick={() => handleNavClick('#courses')}
+                    onClick={() => handleNavClick('#services-section')}
                     className="text-muted-foreground hover:text-brand-orange text-sm transition-colors text-left"
                   >
-                    {course}
+                    {service}
                   </button>
                 </li>
               ))}
@@ -113,7 +122,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-brand-orange mt-0.5 shrink-0" />
                 <span className="text-muted-foreground text-sm leading-relaxed">
-                  Janakpuri, Delhi
+                  Janakpuri C1, Delhi-110058
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -122,21 +131,27 @@ export default function Footer() {
                   +91-9717044953
                 </a>
               </li>
+              <li className="flex items-start gap-3">
+                <Mail className="h-4 w-4 text-brand-orange shrink-0 mt-0.5" />
+                <a href="mailto:digitalmarketingtown14@gmail.com" className="text-muted-foreground hover:text-brand-orange text-sm transition-colors break-all">
+                  digitalmarketingtown14@gmail.com
+                </a>
+              </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-brand-orange shrink-0" />
-                <a href="mailto:admissions@dmti.edu" className="text-muted-foreground hover:text-brand-orange text-sm transition-colors">
-                  admissions@dmti.edu
+                <Globe className="h-4 w-4 text-brand-orange shrink-0" />
+                <a href="https://digitalmarketingtown.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-orange text-sm transition-colors">
+                  digitalmarketingtown.com
                 </a>
               </li>
             </ul>
 
-            {/* Enroll CTA */}
+            {/* CTA */}
             <div className="mt-6">
               <button
-                onClick={() => handleNavClick('#courses')}
+                onClick={() => handleNavClick('#contact-section')}
                 className="w-full bg-brand-orange hover:bg-brand-orange-light text-brand-navy font-bold text-sm py-2.5 rounded-full transition-all"
               >
-                Enroll Now
+                Get Free Consultation
               </button>
             </div>
           </div>
@@ -147,7 +162,7 @@ export default function Footer() {
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Digital Marketing Town Institute. All rights reserved.
+            © {new Date().getFullYear()} Digital Marketing Town. All rights reserved. | Janakpuri, Delhi
           </p>
           <p className="text-muted-foreground text-xs flex items-center gap-1">
             Built with{' '}

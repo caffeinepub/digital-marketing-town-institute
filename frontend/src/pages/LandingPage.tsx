@@ -1,10 +1,13 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
-import CoursesOverview from '../components/CoursesOverview';
+import GalleryPromotions from '../components/GalleryPromotions';
+import OurMoments from '../components/OurMoments';
+import VideoHighlights from '../components/VideoHighlights';
 import Testimonials from '../components/Testimonials';
+import ContactForm from '../components/ContactForm';
 import FAQ from '../components/FAQ';
-import CTABanner from '../components/CTABanner';
 import Footer from '../components/Footer';
 
 export default function LandingPage() {
@@ -13,10 +16,17 @@ export default function LandingPage() {
       <Navbar />
       <main>
         <Hero />
+        <div id="services-section">
+          <Services />
+        </div>
         <WhyChooseUs />
-        <CoursesOverview />
+        <GalleryPromotions />
+        <OurMoments />
+        <VideoHighlights />
         <Testimonials />
-        <CTABanner />
+        <div id="contact-section">
+          <ContactForm />
+        </div>
         <FAQ />
       </main>
       <Footer />

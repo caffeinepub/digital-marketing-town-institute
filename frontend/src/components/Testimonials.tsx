@@ -2,58 +2,58 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Priya Sharma',
-    role: 'Digital Marketing Manager',
-    company: 'TechCorp India',
-    avatar: 'PS',
+    name: 'Rajesh Kumar',
+    role: 'Restaurant Owner',
+    company: 'Spice Garden, Delhi',
+    avatar: 'RK',
     rating: 5,
     quote:
-      'DMTI completely transformed my career. The SEO and PPC modules were incredibly practical — I landed a 40% salary hike within 3 months of completing the course. The instructors are world-class!',
+      'Digital Marketing Town transformed our restaurant business. Their social media campaigns brought in 3x more customers within just 2 months. The team is professional, responsive, and truly understands local business needs.',
   },
   {
-    name: 'Rahul Mehta',
-    role: 'Social Media Strategist',
-    company: 'BrandBoost Agency',
-    avatar: 'RM',
+    name: 'Sunita Sharma',
+    role: 'Boutique Owner',
+    company: 'Sunita Fashion, Janakpuri',
+    avatar: 'SS',
     rating: 5,
     quote:
-      'I was a complete beginner when I joined. The structured curriculum, live projects, and 1-on-1 mentorship gave me the confidence to start my own digital marketing agency. Best investment I ever made.',
+      'I was struggling to get online customers for my boutique. DMT set up our Instagram and Facebook pages, ran targeted ads, and now we get 50+ inquiries daily. Best investment for my business!',
   },
   {
-    name: 'Ananya Patel',
-    role: 'Content Marketing Lead',
-    company: 'GrowthHive',
-    avatar: 'AP',
+    name: 'Amit Verma',
+    role: 'Real Estate Agent',
+    company: 'Delhi Properties',
+    avatar: 'AV',
     rating: 5,
     quote:
-      'The content marketing and email marketing courses are phenomenal. I went from zero to running full campaigns for Fortune 500 clients. The certification opened doors I never thought possible.',
+      'Their Google Ads and SEO services helped me rank on the first page for real estate keywords in Delhi. My lead volume increased by 200% in 3 months. Highly recommend Digital Marketing Town!',
   },
   {
-    name: 'Vikram Singh',
-    role: 'PPC Specialist',
-    company: 'AdVantage Media',
-    avatar: 'VS',
+    name: 'Priya Malhotra',
+    role: 'Clinic Director',
+    company: 'Wellness Clinic, West Delhi',
+    avatar: 'PM',
     rating: 5,
     quote:
-      'The Google Ads and Meta Ads training is unmatched. Real campaign walkthroughs, live budget management, and expert feedback made all the difference. I now manage ₹50L+ in ad spend monthly.',
+      'The Meta Ads campaigns they ran for our clinic were exceptional. We saw a 150% increase in appointment bookings. The team is knowledgeable, creative, and always delivers on time.',
   },
   {
-    name: 'Sneha Kapoor',
-    role: 'SEO Analyst',
-    company: 'RankFirst Digital',
-    avatar: 'SK',
+    name: 'Vikram Nair',
+    role: 'E-commerce Entrepreneur',
+    company: 'ShopEasy India',
+    avatar: 'VN',
     rating: 5,
     quote:
-      'Flexible learning was a game-changer for me as a working professional. I completed the course in evenings and weekends. The placement support was exceptional — got placed before I even finished!',
+      'DMT built our entire e-commerce website and handled all our digital marketing. Sales went from zero to ₹5L/month in just 4 months. Their web development and SEO team is outstanding.',
   },
   {
-    name: 'Arjun Nair',
-    role: 'Freelance Digital Marketer',
-    company: 'Self-Employed',
-    avatar: 'AN',
+    name: 'Neha Gupta',
+    role: 'Coaching Center Owner',
+    company: 'Excel Academy, Delhi',
+    avatar: 'NG',
     rating: 5,
     quote:
-      'DMTI gave me the skills and portfolio to charge premium rates as a freelancer. The live project experience was invaluable. I now earn 3x what I made in my previous corporate job.',
+      'We needed more student enrollments and Digital Marketing Town delivered. Their targeted Facebook campaigns and SEO work filled all our batches within weeks. Excellent ROI and great support!',
   },
 ];
 
@@ -73,14 +73,14 @@ export default function Testimonials() {
         {/* Section header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-brand-orange/10 border border-brand-orange/20 rounded-full px-4 py-1.5 mb-4">
-            <span className="text-brand-orange text-sm font-semibold uppercase tracking-wide">Student Stories</span>
+            <span className="text-brand-orange text-sm font-semibold uppercase tracking-wide">Client Stories</span>
           </div>
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-foreground mb-4">
             Real Results,{' '}
-            <span className="text-gradient">Real People</span>
+            <span className="text-gradient">Real Clients</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Over 5,000 students have transformed their careers with DMTI. Here's what they have to say.
+            Over 500 businesses across Delhi have grown with Digital Marketing Town. Here's what they say.
           </p>
         </div>
 
@@ -127,10 +127,10 @@ export default function Testimonials() {
         {/* Trust bar */}
         <div className="mt-16 flex flex-wrap justify-center gap-8 items-center">
           {[
-            { value: '5,000+', label: 'Graduates' },
+            { value: '500+', label: 'Happy Clients' },
             { value: '4.9/5', label: 'Average Rating' },
-            { value: '200+', label: 'Hiring Partners' },
-            { value: '98%', label: 'Placement Rate' },
+            { value: '1000+', label: 'Projects Done' },
+            { value: '5+', label: 'Years Experience' },
           ].map(({ value, label }) => (
             <div key={label} className="text-center">
               <div className="font-display font-extrabold text-3xl text-brand-orange">{value}</div>

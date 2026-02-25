@@ -1,47 +1,47 @@
-import { Trophy, Clock, Award, TrendingUp, HeadphonesIcon, Globe } from 'lucide-react';
+import { Trophy, Target, Award, TrendingUp, HeadphonesIcon, Globe } from 'lucide-react';
 
 const benefits = [
   {
     icon: Trophy,
-    title: 'Expert Instructors',
+    title: 'Proven Results',
     description:
-      'Learn from seasoned digital marketing professionals with 10+ years of real-world industry experience at top brands.',
-    highlight: '10+ Years',
+      'We have helped 500+ businesses across Delhi grow their online presence and generate consistent leads through data-driven strategies.',
+    highlight: '500+ Clients',
   },
   {
-    icon: Clock,
-    title: 'Flexible Learning',
+    icon: Target,
+    title: 'Targeted Campaigns',
     description:
-      'Study at your own pace with lifetime access to course materials, live sessions, and recorded lectures available 24/7.',
-    highlight: 'Self-Paced',
+      'Every campaign is tailored to your specific business goals, audience, and budget — no one-size-fits-all approach.',
+    highlight: 'Custom Strategy',
   },
   {
     icon: Award,
-    title: 'Industry Certification',
+    title: 'Certified Experts',
     description:
-      'Earn globally recognized certifications that are valued by top employers and digital marketing agencies worldwide.',
-    highlight: 'Globally Recognized',
+      'Our team holds Google, Meta, and HubSpot certifications, ensuring your campaigns are managed by qualified professionals.',
+    highlight: 'Certified Team',
   },
   {
     icon: TrendingUp,
-    title: 'Career Placement',
+    title: 'ROI Focused',
     description:
-      'Our dedicated placement cell connects you with 200+ hiring partners to land your dream digital marketing role.',
-    highlight: '98% Placement',
+      'We focus on metrics that matter — leads, conversions, and revenue. Every rupee you invest is tracked and optimized.',
+    highlight: 'Measurable ROI',
   },
   {
     icon: HeadphonesIcon,
-    title: 'Dedicated Mentorship',
+    title: 'Dedicated Support',
     description:
-      'Get 1-on-1 mentorship sessions, live doubt-clearing classes, and ongoing support throughout your learning journey.',
-    highlight: '1-on-1 Support',
+      'Get a dedicated account manager, regular strategy calls, and transparent monthly reports on all your campaigns.',
+    highlight: 'Personal Manager',
   },
   {
     icon: Globe,
-    title: 'Live Projects',
+    title: 'Full-Service Agency',
     description:
-      'Work on real client campaigns and live projects to build a portfolio that stands out to employers from day one.',
-    highlight: 'Real Campaigns',
+      'From SEO to web development, social media to paid ads — we handle everything under one roof so you can focus on your business.',
+    highlight: 'All-in-One',
   },
 ];
 
@@ -55,11 +55,11 @@ export default function WhyChooseUs() {
             <span className="text-brand-orange text-sm font-semibold uppercase tracking-wide">Why Choose Us</span>
           </div>
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-foreground mb-4">
-            The DMTI{' '}
+            The DMT{' '}
             <span className="text-gradient">Advantage</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            We don't just teach digital marketing — we build digital marketing careers. Here's what sets us apart.
+            We don't just run campaigns — we build digital growth engines for your business. Here's what sets us apart.
           </p>
         </div>
 

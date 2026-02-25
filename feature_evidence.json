@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-replace-the-current-generated-placeholder-logo-image-in-the-navbar-and-footer-components-with-the-uploaded-official-digital-marketing-town-institute-logo-dmti-logo-png-the-logo-shows-a-blue-globe-like-swirl-icon-alongside-the-text-digital-marketing-town-institute-display-it-at-an-appropriate-size-in-both-components-preserving-its-aspect-ratio-the-image-must-be-served-from-frontend-public-assets-generated-dmti-logo-png",
-      "featureTitle": "Replace the current generated/placeholder logo image in the Navbar and Footer components with the uploaded official Digital Marketing Town Institute logo (dmti-logo.png). The logo shows a blue globe-like swirl icon alongside the text 'Digital Marketing Town INSTITUTE'. Display it at an appropriate size in both components, preserving its aspect ratio. The image must be served from frontend/public/assets/generated/dmti-logo.png.",
+      "featureId": "feature-replace-the-logo-image-currently-displayed-in-the-navbar-and-footer-components-with-the-newly-uploaded-logo-served-from-frontend-public-assets-generated-dmti-logo-png-display-it-at-an-appropriate-size-in-both-components-preserving-its-aspect-ratio",
+      "featureTitle": "Replace the logo image currently displayed in the Navbar and Footer components with the newly uploaded logo served from frontend/public/assets/generated/dmti-logo.png. Display it at an appropriate size in both components, preserving its aspect ratio.",
       "files": [
         "frontend/src/components/Footer.tsx",
         "frontend/src/components/Navbar.tsx"
@@ -13,10 +13,11 @@
         "shadcn-ui@1.0.0",
         "build-template-react@1.0.0",
         "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-5"
+        "REQ-14"
       ],
       "confidence": "high"
     }

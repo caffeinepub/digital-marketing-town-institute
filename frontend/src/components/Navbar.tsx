@@ -3,11 +3,12 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Courses', href: '#courses' },
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services-section' },
+  { label: 'About', href: '#why-us' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '#contact-section' },
 ];
 
 export default function Navbar() {
@@ -24,10 +25,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <a href="#" onClick={() => handleNavClick('#home')} className="flex items-center">
             <img
-              src="/assets/generated/dmti-logo.dim_400x160.png"
-              alt="Digital Marketing Town Institute"
+              src="/assets/generated/dmti-logo.png"
+              alt="Digital Marketing Town"
               className="h-10 w-auto object-contain"
             />
           </a>
@@ -38,7 +39,7 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-brand-orange transition-colors rounded-md"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-brand-orange transition-colors rounded-md"
               >
                 {link.label}
               </button>
@@ -48,10 +49,10 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Button
-              onClick={() => handleNavClick('#courses')}
+              onClick={() => handleNavClick('#contact-section')}
               className="bg-brand-orange hover:bg-brand-orange-light text-brand-navy font-semibold px-5 py-2 rounded-full transition-all hover:shadow-orange-glow"
             >
-              Enroll Now
+              Free Consultation
             </Button>
           </div>
 
@@ -80,10 +81,10 @@ export default function Navbar() {
           ))}
           <div className="pt-3">
             <Button
-              onClick={() => handleNavClick('#courses')}
+              onClick={() => handleNavClick('#contact-section')}
               className="w-full bg-brand-orange hover:bg-brand-orange-light text-brand-navy font-semibold rounded-full"
             >
-              Enroll Now
+              Free Consultation
             </Button>
           </div>
         </div>

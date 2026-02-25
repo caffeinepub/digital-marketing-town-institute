@@ -1,28 +1,33 @@
-import { ArrowRight, Play, Users, BookOpen, Award } from 'lucide-react';
+import { ArrowRight, Phone, MapPin, Mail, TrendingUp, Users, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const stats = [
-  { icon: Users, value: '5,000+', label: 'Students Enrolled' },
-  { icon: BookOpen, value: '12+', label: 'Expert Courses' },
-  { icon: Award, value: '98%', label: 'Placement Rate' },
+  { icon: Users, value: '500+', label: 'Happy Clients' },
+  { icon: TrendingUp, value: '1000+', label: 'Projects Done' },
+  { icon: Star, value: '5★', label: 'Rated Agency' },
 ];
 
 export default function Hero() {
-  const handleEnroll = () => {
-    const el = document.querySelector('#courses');
+  const handleConsult = () => {
+    const el = document.querySelector('#contact-section');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleServices = () => {
+    const el = document.querySelector('#services-section');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-16">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/assets/generated/hero-banner.dim_1440x700.png')" }}
       />
       {/* Overlay gradient */}
-      <div className="absolute inset-0 hero-gradient opacity-90" />
-      {/* Decorative orange glow */}
+      <div className="absolute inset-0 hero-gradient opacity-92" />
+      {/* Decorative glows */}
       <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-brand-orange/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full bg-brand-yellow/5 blur-3xl pointer-events-none" />
 
@@ -32,46 +37,58 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 bg-brand-orange/15 border border-brand-orange/30 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
             <span className="text-brand-orange text-sm font-semibold tracking-wide uppercase">
-              #1 Digital Marketing Institute
+              #1 Digital Marketing Agency — Janakpuri, Delhi
             </span>
           </div>
 
           {/* Heading */}
           <h1 className="font-display font-extrabold text-5xl sm:text-6xl lg:text-7xl leading-tight text-foreground mb-6">
-            Master{' '}
-            <span className="text-gradient">Digital Marketing</span>
+            Get More Leads &{' '}
+            <span className="text-gradient">Grow Your</span>
             <br />
-            <span className="text-foreground">Like a Pro</span>
+            <span className="text-foreground">Business</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-            Join <strong className="text-foreground">Digital Marketing Town Institute</strong> and transform your career
-            with industry-leading courses in SEO, Social Media, PPC, Content Marketing, and more.
-            Learn from experts. Get certified. Get hired.
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+            <strong className="text-foreground">Digital Marketing Town</strong> is your full-service digital marketing
+            partner in Delhi. We help businesses attract more customers, generate quality leads, and scale revenue
+            through data-driven digital strategies.
           </p>
+
+          {/* Contact strip */}
+          <div className="flex flex-wrap gap-4 mb-8 text-sm">
+            <a href="tel:+919717044953" className="flex items-center gap-2 text-brand-yellow hover:text-brand-orange transition-colors font-medium">
+              <Phone className="h-4 w-4" />
+              +91-9717044953
+            </a>
+            <span className="flex items-center gap-2 text-muted-foreground">
+              <MapPin className="h-4 w-4 text-brand-orange" />
+              Janakpuri C1, Delhi-110058
+            </span>
+            <a href="mailto:digitalmarketingtown14@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-brand-orange transition-colors">
+              <Mail className="h-4 w-4 text-brand-orange" />
+              digitalmarketingtown14@gmail.com
+            </a>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-14">
             <Button
-              onClick={handleEnroll}
+              onClick={handleConsult}
               size="lg"
               className="bg-brand-orange hover:bg-brand-orange-light text-brand-navy font-bold text-base px-8 py-4 rounded-full shadow-orange-glow hover:shadow-card-hover transition-all animate-pulse-glow group"
             >
-              Enroll Now
+              Get Free Consultation
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-border text-foreground hover:bg-secondary hover:text-foreground font-semibold text-base px-8 py-4 rounded-full transition-all group"
-              onClick={() => {
-                const el = document.querySelector('#why-us');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
+              className="border-border text-foreground hover:bg-secondary hover:text-foreground font-semibold text-base px-8 py-4 rounded-full transition-all"
+              onClick={handleServices}
             >
-              <Play className="mr-2 h-4 w-4 text-brand-orange" />
-              Learn More
+              View Our Services
             </Button>
           </div>
 
